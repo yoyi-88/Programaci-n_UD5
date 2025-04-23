@@ -12,7 +12,7 @@ public class GestorPaquetes {
 
     public void procesarPaquetes() {
         // Ordenamos los paquetes por prioridad (de menor a mayor)
-        Collections.sort(paquetes, Comparator.comparingInt(Paquete::getPrioridad));
+        Collections.sort(paquetes);
 
         // Recorremos la lista para imprimirla
         for (Paquete p : paquetes) {
